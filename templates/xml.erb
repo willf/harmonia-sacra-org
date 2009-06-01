@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tunes><% page.tunes.each do |tune| %>
+  <tune>
+    <Page><%= tune[HSPage::Page] %></Page>
+    <Tune><%= tune[HSPage::Tune] %></Tune>
+    <Metre><%= tune[HSPage::Metre] %></Metre>
+    <Doremi><%= tune[HSPage::Doremi] %></Doremi>
+    <Firstline><%= tune[HSPage::Firstline] %></Firstline>
+    <AltName><%= tune[HSPage::AltName] %></AltName>
+    <Composer><%= tune[HSPage::Composer] %></Composer>
+    <ComposerDate><%= tune[HSPage::ComposerDate] %></ComposerDate>
+    <ComposerNotes><%= tune[HSPage::ComposerNotes] %></ComposerNotes>
+    <Author><%= tune[HSPage::Author] %></Author>
+    <AuthorDate><%= tune[HSPage::AuthorDate] %></AuthorDate>
+    <AuthorNotes><%= tune[HSPage::AuthorNotes] %></AuthorNotes>
+  </tune><% end %>
+</tunes>  
