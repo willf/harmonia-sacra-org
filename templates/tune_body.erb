@@ -1,7 +1,9 @@
 
 <h3>Versions</h3>
 <p style="padding:0px">
-<a href="<%= tune_4 %>">4 shape print</a>&nbsp;|&nbsp;<a href="<%= tune_7 %>">7 shape print</a>&nbsp;|&nbsp;<a href="<%= prev_page %>">Previous Tune</a>&nbsp;|&nbsp;<a href="<%= next_page %>">Next Tune</a>  
-<embed class="tune_embed" src="<%= midi %>" align="center" controls="smallconsole" autostart="false" loop="true">
+<a href="<%= tune_4 %>">4 shape print</a>&nbsp;|&nbsp;<a href="<%= tune_7 %>">7 shape print</a>&nbsp;|&nbsp;<a href="<%= midi %>">MIDI</a>&nbsp;|&nbsp;<a href="<%= prev_page %>">Previous Tune</a>&nbsp;|&nbsp;<a href="<%= next_page %>">Next Tune</a>  
+<audio controls autoplay loop>
+  <source src="<%= mp3 %>" />
+</audio>
 </p>  
 <div class='tune_image'><a href="<%= tune_image %>"><img src="<%= tune_image %>" width="680px"></a></div>

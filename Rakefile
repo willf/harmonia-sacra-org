@@ -10,6 +10,7 @@ TEMPLATE_DIR = File.join(File.dirname(__FILE__),'templates')
 SITE_DIR = File.dirname(__FILE__)
 DATA_DIR = File.join(File.dirname(__FILE__), 'data')
 MIDI_DIR = File.join(SITE_DIR, 'midis')
+MP3_DIR = File.join(SITE_DIR, 'mp3s')
 HS_4_DIR = File.join(SITE_DIR, 'hs_4_pdf')
 HS_7_DIR = File.join(SITE_DIR, 'hs_7_pdf')
 DIR_IMG = File.join(SITE_DIR, 'hs_tune_images')
@@ -420,14 +421,22 @@ class IncipitIndexPage < HSPage
   
   def incipit_to_integer(str)
     case str[0..0].downcase
-    when "#" : -1
-    when "d" : 0
-    when "r" : 1
-    when "m" : 2
-    when "f" : 3
-    when "s" : 4
-    when "l" : 5
-    when "t" : 6
+      when "#"
+         -1
+      when "d" 
+         0
+      when "r" 
+         1
+      when "m" 
+         2
+      when "f" 
+         3
+      when "s" 
+         4
+      when "l" 
+         5
+      when "t" 
+         6
     else 
       raise "Invalid incipit: #{str}"
     end
@@ -515,6 +524,9 @@ class TunePage < HSPage
   end
   def midi
     finess_page("midis/#{@tune_page}.MID")
+  end
+  def mp3
+    finess_page("mp3s/#{@tune_page}.mp3")
   end
   def gen_body
     gen_template('tune_body.erb')
