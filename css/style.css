@@ -1,6 +1,7 @@
 body {
-	font-family:arial, verdana, helvetica, sans-serif;
-	font-size:12px;
+	/* font-family:arial, verdana, helvetica, sans-serif; */
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size:14px;
 	cursor:default;
 	background-color:#FFFFFF
 }
@@ -40,17 +41,15 @@ h1 {
 	font-size:28px;
 	color:#333333;
 	background-color:#FFFFFF;
-	font-family:Arial, Verdana, Helvetica, sans-serif;
 	font-weight:300;
-} 
+}
 h1.title {
   font-size:24px;
-  text-align: center; 
+  text-align: center;
 }
 h2 {
 	font-size:15px;
 	color:gray;
-	font-family:Arial, Verdana, Helvetica, sans-serif;
 	font-weight:300;
 	background-color:#FFFFFF;
 }
@@ -66,7 +65,7 @@ h3 {
 	padding:5px;
 	margin-top:5px;
 }
-h3.title { 
+h3.title {
   text-align: center;
 }
 #left {
@@ -94,7 +93,7 @@ ul, ol {
 	color:black;
 	background-color:#FFFFFF;
 	line-height: 18px;
-	padding:15px;  
+	padding:15px;
 }
 a {
 	color:#333333;
@@ -109,7 +108,6 @@ a:hover {
 #footer {
 	clear:both;
 	font-size:12px;
-	font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 .right {
 	color:gray;
@@ -126,13 +124,13 @@ a:hover {
 	margin-top:5px;
 }
 div.tune_image {
-    
+
 }
 .tune_embed {
-    height:25px;  
+    height:25px;
     align:top;
-    border:0; 
-    margin-left:15px;  
+    border:0;
+    margin-left:15px;
 }
 
 audio {
